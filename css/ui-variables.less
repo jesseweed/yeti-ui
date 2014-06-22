@@ -1,0 +1,128 @@
+// Colors
+@blue: rgb(150,192,216);
+@green: rgb(159,185,110);
+@yellow: rgb(220,181,83);
+@red: rgb(206,64,69);
+@purple: rgb(160,116,196);
+@background: rgb(232,230,232);
+@text: rgb(177,163,148);
+
+@app-background-color: @background;
+
+@text-color: rgb(177,163,148);
+@text-color-subtle: lighten(@text-color, 25%);
+@text-color-highlight: darken(@text-color, 25%);
+@text-color-selected: @text-color-highlight;
+
+@text-color-info: @blue;
+@text-color-success: @green;
+@text-color-warning: @yellow;
+@text-color-error: @red;
+
+@text-color-ignored: @text-color-subtle;
+@text-color-added: @text-color-success;
+@text-color-renamed: @text-color-info;
+@text-color-modified: @text-color-warning;
+@text-color-removed: @text-color-error;
+
+@background-color-info: @blue;
+@background-color-success: @green;
+@background-color-warning: @blue;
+@background-color-error: @red;
+@background-color-highlight: rgba(255,255,255,0.2);
+@background-color-selected: @blue;
+
+
+
+@base-background-color: rgb(235,230,230);
+@base-border-color: rgba(0, 0, 0, 0.1);
+
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: rgba(0, 0, 0, 0.1);
+
+@input-background-color: rgb(240,235,235);
+@input-border-color: darken(@app-background-color, 10%);
+
+@tool-panel-background-color: rgb(240,235,235);
+@tool-panel-border-color: @base-border-color;
+
+@inset-panel-background-color: @app-background-color;
+@inset-panel-border-color: @base-border-color;
+
+@panel-heading-background-color: #43484d;
+@panel-heading-border-color: fadein(@base-border-color, 10%);
+
+
+
+// OVERLAYS
+@overlay-background-color: #fff;
+@overlay-border-color: @background-color-highlight;
+@overlay-text-color: @text-color;
+@overlay-selected-bg: rgba(217,213,206, 0.4);
+@overlay-selected-text: darken(@text-color, 15%);
+@overlay-key-binding: @overlay-selected-bg;
+@overlay-key-binding-text: @overlay-selected-text;
+@overlay-key-binding-highlight-text: @overlay-selected-text;
+@overlay-key-binding-highlight: @overlay-background-color;
+
+
+@button-background-color: @blue;
+@button-background-color-hover: lighten(@button-background-color, 5%);
+@button-background-color-selected: rgba(150,192,216, 0.5);
+@button-border-color: @base-border-color;
+@button-text-color: #fff;
+
+
+// TREE VIEW / SIDE PANEL
+@tree-view-background-color: rgb(240,235,235);
+@tree-view-border-color: @tool-panel-border-color;
+@tree-view-font-color: @text;
+
+@scrollbar-background-color: rgba(42, 42, 42, 0.5);
+@scrollbar-color: rgba(92, 92, 92, 0.5);
+
+@ui-site-color-1: @blue;
+@ui-site-color-2: @green;
+@ui-site-color-3: @purple;
+@ui-site-color-4: @red;
+@ui-site-color-5: @yellow;
+
+
+// Sizes
+
+@font-size: 11px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+@component-border-radius: 2px;
+
+
+
+// TABS
+@modified-icon-width: 8px;
+@tab-border: none;
+@tab-height: 40px;
+@tab-top-padding: 0px;
+@tab-bottom-border-height: 0px;
+
+@tab-highlight-color: @blue;
+@tab-background: rgb(218,216,208);
+@tab-background-active: rgb(240,235,235);
+@tab-bar-bottom-border-color: rgb(218,216,208);
+@tab-bar-background-color: rgb(229,225,219);
+@tab-background-color-active: @tab-background-active;
+@tab-text-color: @text-color;
+@tab-text-highlight-color: @blue;
+
+
+
+// PANELS
+
+// BOTTOM
+@tool-panel-bg: rgb(218,216,208);
+@tool-panel-font-color: @text;
+@tool-panel-selected-font-color: @text;

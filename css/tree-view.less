@@ -1,0 +1,55 @@
+@import "ui-variables";
+
+.selected {
+  text-shadow: none !important;
+}
+
+.list-group li:not(.list-nested-item).selected, .list-tree li:not(.list-nested-item).selected, .list-group li.list-nested-item.selected > .list-item, .list-tree li.list-nested-item.selected > .list-item {
+  text-shadow: none !important;
+}
+
+.tree-view {
+  font-size: @font-size;
+  background: @tree-view-background-color !important;
+  color: @tool-panel-font-color;
+  text-shadow: none !important;
+
+  .selected {
+    // padding: 20px;
+    text-shadow: none !important;
+  }
+  .selected:before {
+    background: rgba(217,213,206, 0.3);
+    box-shadow: none;
+    text-shadow: none !important;
+    // padding: 20px;
+  }
+}
+
+.focusable-panel {
+  opacity: 1;
+  background: @tree-view-background-color;
+  box-shadow: none;
+  border: 0;
+
+  &:focus {
+    background: @tree-view-background-color;
+
+    .selected {
+      text-shadow: none !important;
+    }
+
+    .selected:before {
+      background: rgba(217,213,206, 0.3);
+      text-shadow: none !important;
+    }
+
+    .selected > .name,
+    .selected > .name:before,
+    .selected > .list-item > .name,
+    .selected > .list-item > .name:before {
+      color: @tool-panel-selected-font-color;
+      text-shadow: none !important;
+    }
+  }
+}

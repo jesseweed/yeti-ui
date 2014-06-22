@@ -1,0 +1,11 @@
+{
+  "name": "yeti-ui",
+  "theme": "ui",
+  "version": "0.1",
+  "description": "A dark colored UI theme for Atom with custom file icons.",
+  "license": "MIT",
+  "repository": "https://github.com/jesseweed/yeti-ui",
+  "engines": {
+    "atom": ">0.100.0"
+  }
+}
