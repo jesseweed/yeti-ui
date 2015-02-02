@@ -72,7 +72,7 @@
   display: inline-block;
   top: -2px;
   padding: 0;
-  color: @text-color;
+  color: @color-default;
 
   &:before {
     font-family: icomoon;
@@ -82,7 +82,7 @@
     position: relative;
     top: 4px;
     left: -4px;
-    color: @text-color;
+    color: @color-default;
   }
 
 }
@@ -137,7 +137,7 @@
   display: inline-block;
   top:-5px;
   padding: 0;
-  color: @text-color-ignored;
+  color: @color-hidden;
 
   &:before {
     font-family: icomoon;
@@ -146,7 +146,7 @@
     position: relative;
     top: 6px;
     left: -5px;
-    color: @text-color-ignored;
+    color: @color-hidden;
   }
 }
 
@@ -662,7 +662,7 @@
   // OPEN/CLOSE SELECTOR
   .header.list-item {
     &:before {
-      color: @text-color-modified;
+      color: @color-status-modified;
     }
   }
 
@@ -670,11 +670,11 @@
   .name.icon.icon-file-directory {
 
     // TEXT
-    color: @text-color-modified;
+    color: @color-status-modified;
 
     // ICON
     &:before {
-      color: @text-color-modified;
+      color: @color-status-modified;
     }
   }
 
@@ -685,11 +685,11 @@
     .name.icon {
 
       // TEXT
-      color: @text-color-modified;
+      color: @color-status-modified;
 
       // ICON
       &:before {
-        color: @text-color-modified;
+        color: @color-status-modified;
       }
     }
   }
@@ -701,7 +701,7 @@
   // OPEN/CLOSE SELECTOR
   .header.list-item {
     &:before {
-      color: @text-color-ignored;
+      color: @color-status-ignored;
     }
   }
 
@@ -709,10 +709,11 @@
   .name.icon.icon-file-directory {
 
     // TEXT
-    color: @text-color-ignored;
+    color: @color-status-ignored;
+
     // ICON
     &:before {
-      color: @text-color-ignored;
+      color: @color-status-ignored;
     }
   }
 
@@ -723,11 +724,11 @@
     .name.icon {
 
       // TEXT
-      color: @text-color-ignored;
+      color: @color-status-ignored;
 
       // ICON
       &:before {
-        color: @text-color-ignored;
+        color: @color-status-ignored;
       }
     }
   }
