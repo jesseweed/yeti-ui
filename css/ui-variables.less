@@ -1,17 +1,17 @@
 // Colors
 @blue: rgb(150,192,216);
 @green: rgb(159,185,110);
-@yellow: rgb(220,181,83);
+@yellow: rgb(0,0,0);
 @red: rgb(206,64,69);
 @purple: rgb(160,116,196);
 @background: rgb(236,234,232);
-@text: rgb(177,163,148);
+@text: rgb(127, 113, 98);
 
 @app-background-color: rgb(236,234,232);
 
-@text-color: rgb(177,163,148);
-@text-color-subtle: lighten(@text-color, 25%);
-@text-color-highlight: darken(@text-color, 25%);
+@text-color: rgb(127, 113, 98);
+@text-color-subtle: lighten(@text-color, 30%);
+@text-color-highlight: darken(@text-color, 30%);
 @text-color-selected: @text-color-highlight;
 
 @text-color-info: @blue;
@@ -76,7 +76,7 @@
 // TREE VIEW / SIDE PANEL
 @tree-view-background-color: @background;
 @tree-view-border-color: @tool-panel-border-color;
-@tree-view-font-color: @text;
+@tree-view-font-color: #000;
 
 @scrollbar-background-color: rgba(42, 42, 42, 0.5);
 @scrollbar-color: rgba(92, 92, 92, 0.5);
@@ -112,11 +112,11 @@
 @tab-highlight-color: @blue;
 @tab-background: rgb(218,216,208);
 @tab-background-active: @background;
-@tab-bar-bottom-border-color: rgb(218,216,219);
+@tab-bar-bottom-border-color: darken(@blue, 10%);
 @tab-bar-background-color: rgb(229,225,219);
 @tab-background-color-active: @tab-background-active;
 @tab-text-color: @text-color;
-@tab-text-highlight-color: @blue;
+@tab-text-highlight-color: darken(@blue, 10%);
 
 
 
